@@ -7,9 +7,11 @@ You must have npm installed:
 
 # Start
 Clone this repository and once inside run :
-``` terminal
-$ npm install```
+```
+$ npm install
+```
 
 Once node_modules and typings folders created just run:
-```terminal
-$ npm start```
+```
+$ npm start
+```
