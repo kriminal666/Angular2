@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-import { Router } from 'angular2/router-deprecated';
+import {Router} from 'angular2/router';
 import {Hero} from './hero';
 import {HeroDetailComponent} from './hero-detail.component';
 import {HeroService} from './hero.service';
@@ -19,8 +19,8 @@ export class HeroesComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private _heroService: HeroService) {
-  }
+    private _heroService: HeroService) { }
+    
   getHeroes() {
     this._heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
   }

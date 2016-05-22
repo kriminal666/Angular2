@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-import { RouteParams } from 'angular2/router-deprecated';
+import { RouteParams } from 'angular2/router';
 import {Hero} from './hero';
 import { HeroService } from './hero.service';
 
@@ -7,7 +7,6 @@ import { HeroService } from './hero.service';
   selector: 'my-hero-detail',
   templateUrl: 'hero-detail.component.html',
   styleUrls: ['app/css/hero-detail.component.css']
-
 
 })
 
