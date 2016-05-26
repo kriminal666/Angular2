@@ -1,5 +1,5 @@
-import { Component, onInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router-deprecated';
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
@@ -10,7 +10,7 @@ import { HeroService } from './hero.service';
 })
 
 
-export class DashBoardComponent {
+export class DashBoardComponent implements OnInit {
     heroes: Hero[] = [];
     constructor(
       private router: Router,
@@ -26,8 +26,3 @@ export class DashBoardComponent {
       this.router.navigate(link);
     }
 }
-
-
-
-
- }
